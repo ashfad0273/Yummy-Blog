@@ -1,92 +1,137 @@
-*{
-    font-family: 'Cormorant', serif;
+* {
+  font-family: "Cormorant", serif;
+  padding: 0;
+  margin: 0;
 }
 html,
-body{
-  width:100%;
-  overflow-x:hidden;
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
-#container{
+#container {
+  padding: 0px 40px;
+  margin: auto;
+  padding: auto;
+  width: 1340px;
+}
+a {
+  text-decoration: none;
+  color: green;
+  margin-top: -20px;
+}
+header #container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+}
+
+header #container .logo {
+  font-size: 30px;
+}
+header #container .logo span {
+  color: green;
+}
+header #container .menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.hero-section {
+  background-image: url(Group\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.hero-section #container {
+  position: relative;
+  top: 40%;
+  left: 50%;
+}
+.hero-section #container .card {
+  background-color: white;
+  width: fit-content;
+  margin-right: 50%;
+  padding: 20px;
+  display: block;
+}
+.spacer {
+  height: 50px;
+}
+section #container .posts .card {
+  width: 320px;
+  height: 450px;
+  background-color: #e1eae0;
+  padding: 10px;
+  text-align: center;
+}
+section #container .posts .card h3 {
+  text-align: left;
+}
+section #container .posts .card p {
+  text-align: left;
+}
+.cards {
+  display: flex;
+  gap: 60px;
+  padding: 30px 0;
+}
+#posts #container {
+  display: flex;
+  gap: 40px;
+}
+
+.recent-posts {
+  width: auto;
+  margin: 5px 0;
+}
+.view-post {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+.txt {
+  margin-top: -20px;
+}
+
+/* mobile responsive */
+
+@media screen and (width: 480px) {
+  #container {
     padding: 0px 40px;
     margin: auto;
     padding: auto;
-}
-a{
-    text-decoration: none;
-    color: green;
-    margin-top: -20px;
-}
-header #container {
+    width: 480px;
+  }
+
+  header #container .logo {
+    margin-left: -10px;
+    font-size: 20px;
+  }
+  header #container .menu ul {
     display: flex;
-    justify-content: space-between;
-    height: 100px;
-    margin: auto;
-}
-header #container .logo span{
-    color: green;
-}
-header #container .menu ul {
-    display: flex;
-    list-style: none;   
-}
-header #container .menu ul li{
-    padding: 0 20px;
+    list-style: none;
+    gap: 10px;
     font-size: 20px;
     line-height: 50px;
-}
-.hero-section{
-    background-image: url(Group\ 1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-}
-.hero-section #container{
-    position: relative;
-    top: 40%;
-    left: 50%;
-}
-.hero-section #container .card {
-    background-color: white;
-    width: fit-content;
-    margin-right: 50%;
-    padding: 20px;
-    display: block;
-}
-.spacer{
-    height: 50px;
-}
-section #container .posts .card{
-    width: 320px;
+  }
+
+  section #container .posts .card {
+    width: 280px;
     height: 450px;
-    background-color: #E1EAE0;
+    background-color: #red;
     padding: 10px;
     text-align: center;
-}
-section #container .posts .card h3{
+  }
+  section #container .posts .card h3 {
     text-align: left;
-}section #container .posts .card p{
+  }
+  section #container .posts .card p {
     text-align: left;
-}
-.cards{
-    display: flex;
-    gap: 60px;
-    padding: 30px 0;
-}
-#posts #container{
-    display: flex;
-    gap: 40px;
-}
-
-.recent-posts{
-    width: auto;
-    margin: 5px 0;
-}
-.view-post{
-    display: flex;
-    gap: 20px;
-    margin: 20px 0;
-}
-.txt{
-    margin-top: -20px;
+  }
 }
